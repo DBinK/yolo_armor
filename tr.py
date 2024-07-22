@@ -6,4 +6,4 @@ model = YOLO('yolov8n.pt')  # 加载预训练模型（推荐用于训练）
 model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # 从YAML建立并转移权重
 
 # 训练模型
-results = model.train(data='armor.yaml', epochs=10, imgsz=640)
+results = model.train(data='armor.yaml', epochs=5, imgsz=640)
