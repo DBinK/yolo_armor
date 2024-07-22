@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: yolov8n.yaml
 data: armor.yaml
-epochs: 5
+epochs: 10
 time: null
 patience: 100
 batch: 16

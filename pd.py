@@ -6,8 +6,9 @@ import cv2
 model = YOLO('runs/detect/train/weights/best.pt')
 
 # 打开视频文件
-# video_path = '/home/dbink/download/2021-0417-1559-小组赛-四川大学VS遵义师范-步兵1.mp4'
-video_path = 'test/test.mp4'
+video_path = '/home/dbink/Downloads/2021-0417-1559-小组赛-四川大学VS遵义师范-步兵1.mp4'
+# video_path = 'test/test.mp4'
+# video_path = 2
 cap = cv2.VideoCapture(video_path)
 
 while cap.isOpened():
