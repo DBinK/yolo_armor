@@ -7,3 +7,9 @@ model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # 从YAML建立并转移权重
 
 # 训练模型
 results = model.train(data='armor.yaml', epochs=5, imgsz=640)
+
+# 评估模型
+results = model.val()
+metrics = results.box.map  # 获取mAP@0.5:0.95
+metrics = results.box.map50  # 获取mAP@0.5
+
