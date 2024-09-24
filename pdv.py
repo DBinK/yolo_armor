@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # 加载训练后的模型
-model = YOLO('train/weights/best.pt')
+model = YOLO('train3/weights/best.pt')
 
 # 打开视频文件
 video_path = 'test/test.mp4'
@@ -35,8 +35,8 @@ while cap.isOpened():
     out.write(annotated_frame)
     
     # 显示结果
-    cv2.namedWindow("YOLOv8 Inference", cv2.WINDOW_NORMAL)
-    cv2.imshow("YOLOv8 Inference", annotated_frame)
+    #cv2.namedWindow("YOLOv8 Inference", cv2.WINDOW_NORMAL)
+    #cv2.imshow("YOLOv8 Inference", annotated_frame)
     
     # 按'q'键退出
     if cv2.waitKey(int(1000 / fps)) & 0xFF == ord('q'):
