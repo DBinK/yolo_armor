@@ -3,13 +3,16 @@ import cv2
 
 # 加载训练后的模型
 model = YOLO('train/weights/best.pt')
+# model = YOLO('D:\\IT\\yolo_armor\\runs\\detect\\train11\\weights\\best.pt')
 
 # 打开视频文件
-video_path = 'test.mp4'
+# video_path = 'test.mp4'
+video_path = 0
 cap = cv2.VideoCapture(video_path)
 
 # 获取视频的帧率
 fps = cap.get(cv2.CAP_PROP_FPS)
+
 
 while cap.isOpened():
     success, frame = cap.read()
@@ -22,8 +25,8 @@ while cap.isOpened():
     results = model(frame)
     
     # 可视化结果
-    #annotated_frame = results[0].plot()
-    annotated_frame = frame
+    annotated_frame = results[0].plot()
+    # annotated_frame = frame
     
     # 显示结果
     cv2.namedWindow("YOLOv8 Inference", cv2.WINDOW_NORMAL)

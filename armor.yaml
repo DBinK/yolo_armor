@@ -1,6 +1,6 @@
-path: /home/dbink/yolo_armor
-train: armor_dataset_v4/images
-val: armor_dataset_v4/images
+path: D:\IT\yolo_armor
+train: armor_dataset_v4\images
+val: armor_dataset_v4\images
 names:
   0: B1
   1: B2

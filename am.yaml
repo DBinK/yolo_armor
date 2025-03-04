@@ -1,0 +1,16 @@
+path: D:\IT\yolo_armor
+train: new_dataset\images
+val: new_dataset\images
+names:
+  0: B1
+  1: B2
+  2: B3
+  3: B4
+  4: B5
+  5: B7
+  6: R1
+  7: R2
+  8: R3
+  9: R4
+  10: R5
+  11: R7

@@ -9,7 +9,8 @@ model_path = 'train4/weights/best.pt'
 model = YOLO(model_path)
 
 # 打开视频文件
-video_path = 'test/test.mp4'
+# video_path = 'test/test.mp4'
+video_path = 0
 cap = cv2.VideoCapture(video_path)
 
 # 获取视频的帧率和尺寸
