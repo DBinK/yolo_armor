@@ -19,11 +19,14 @@ from ultralytics import YOLO
 # model = YOLO("D:\\IT\\yolo_armor\\320\\320_half_openvino_model")  
 # model = YOLO("D:\\IT\\yolo_armor\\320\\320_int8_openvino_model")  
 
-model = YOLO("./320_11/320_11.pt")  
+# model = YOLO("./320_11/320_11.pt")  
+# model.to(device='cpu')
+# model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
+# model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
+# model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
+
+model = YOLO("./160_11/160_11.pt")  
 model.to(device='cpu')
-# model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
-# model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
-# model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
 
 # model = YOLO("D:\\IT\\yolo_armor\\runs\\detect\\train12\\weights\\best.pt")  
 
