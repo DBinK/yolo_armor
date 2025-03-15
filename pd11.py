@@ -25,13 +25,19 @@ from ultralytics import YOLO
 # model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
 # model = YOLO("D:\\IT\\yolo_armor\\320_11\\320_11_int8_openvino_model")  
 
-model = YOLO("./160_11/160_11.pt")  
-model.to(device='cpu')
+# model = YOLO("./160_11/160_11.pt")  
+# model.to(device='cpu')
 
 # model = YOLO("D:\\IT\\yolo_armor\\runs\\detect\\train12\\weights\\best.pt")  
 
-video_path = "test/test3.mp4"  # 替换为你的视频路径
-# video_path = 0  # 实时摄像头推理
+# model = YOLO("best.pt")  
+# model.to(device='cpu')
+
+model = YOLO("yolo11n.pt")  
+model.to(device='cpu')
+
+# video_path = "test/test3.mp4"  # 替换为你的视频路径
+video_path = 0  # 实时摄像头推理
 
 cap = cv2.VideoCapture(video_path)
 
