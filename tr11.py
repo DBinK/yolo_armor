@@ -10,7 +10,8 @@ model = YOLO("yolo11n.yaml").load("yolo11n.pt")  # build from YAML and transfer 
 
 if __name__ == "__main__":
     # 训练模型
-    results = model.train(data='armor.yaml', epochs=50, imgsz=160, half=True)
+    # results = model.train(data='armor.yaml', epochs=50, imgsz=1280, half=True)
+    results = model.train(data='armor.yaml', epochs=50, imgsz=800, half=True)
 
     # 评估模型
     results = model.val()

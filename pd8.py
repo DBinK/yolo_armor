@@ -34,9 +34,10 @@ from ultralytics import YOLO
 # model.to(device='cpu')
 
 # model = YOLO("yolov8n.pt")  
-# model = YOLO("yolo8-20epoch.pt")  
+model = YOLO("yolo8-20epoch.pt")  
 # model = YOLO("best-5.pt")  
-model = YOLO("best-9.pt")  
+# model = YOLO("best-9.pt")  
+# model = YOLO("yolov8s.pt")  
 # model.to(device='cpu')
 
 # video_path = "test/test3.mp4"  # 替换为你的视频路径
